@@ -1,0 +1,18 @@
+/* latin-ext */
+@font-face {
+  font-family: monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* latin */
+@font-face {
+  font-family: monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %} <!-- New line -->
+
+<html>
+
+    <head>
+        <title>Ellora</title>
+        <link href="{% static "css/form_elements.css" %}" rel="stylesheet" type='text/css' />
+        <link href="{% static "css/fonts.css" %}" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" />
+    </head>
+    <body>
+        <h1> auto test generator</h1>
+        <div class="wrapper">
+        <form class="form" method="post", action="/ellora/">
+        {% csrf_token %}
+          {{ form }}
+          <input type="submit" class="submit" id="post-form" value="Generate Test">
+        </form>        
+    </div>
+ 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="{% static "scripts/main.js" %}"></script>
+    </body>
+</html>
